@@ -37,7 +37,7 @@ func RadixSort(arr []int) {
 
 		// Copiamos los números de las urnas al arreglo original
 		idx := 0
-		for j := 0; j < 10; j++ {
+		for j := 9; j >= 0; j++ {
 			for _, num := range buckets[j] {
 				arr[idx] = num
 				idx++
